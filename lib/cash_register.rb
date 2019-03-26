@@ -32,7 +32,7 @@ class CashRegister
   end
   def items
     # returns an array containing all items that have been added
-    return @cart
+    cart
   end
   def void_last_transaction
     # subtracts the last transaction from the total
