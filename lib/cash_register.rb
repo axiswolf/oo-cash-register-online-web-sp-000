@@ -30,10 +30,11 @@ class CashRegister
         return "After the discount, the total comes to #{@total}"
       end
   end
-  def self.items
+  def items
     # returns an array containing all items that have been added
+    return @cart
   end
-  def self.void_last_transaction
+  def void_last_transaction
     # subtracts the last transaction from the total
   end
 end
