@@ -34,8 +34,8 @@ class CashRegister
     # returns an array containing all items that have been added
     items=[]
     @cart.each do |things|
-      for quantity in 1..item_info[:quantity]
-        items << item_info[:name]
+      for quantity in 1..things[:quantity]
+        items << things[:name]
       end
     end
     items
