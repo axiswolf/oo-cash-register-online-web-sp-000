@@ -6,6 +6,7 @@ class CashRegister
     # new sets an instance variable @total on initialization to zero
     # new optionally takes an employee discount on initalization
     @cart = []
+    @transaction = []
   end
   def self.total(total)
     # returns current total
@@ -21,6 +22,7 @@ class CashRegister
     item_info[:quantity] = quantity
     @cart << item_info
     @total += price * quantity
+    @transactions << price
   end
   def apply_discount
     # Cash register was initalized with an employee discount applies the discount to total price
