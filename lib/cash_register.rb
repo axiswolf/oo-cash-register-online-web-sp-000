@@ -32,16 +32,17 @@ class CashRegister
   end
   def items
     # returns an array containing all items that have been added
-    items=[]
-    @cart.each do |things|
-      for quantity in 1..things[:quantity]
-        items << things[:name]
-      end
-    end
-    items
+    #items=[]
+    #@cart.each do |things|
+    #  for quantity in 1..things[:quantity]
+    #    items << things[:name]
+    #  end
+    #end
+    #items
+    @items
   end
   def void_last_transaction
     # subtracts the last transaction from the total
-
+    self.total = @total - @cart.pop
   end
 end
