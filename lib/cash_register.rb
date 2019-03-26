@@ -26,9 +26,9 @@ class CashRegister
     # Cash register was initalized with an employee discount applies the discount to total price
       if @discount == 0
         return "There is no discount to apply."
-      else @total -= @total * @discount/100
+      end 
+      @total -= @total * @discount/100
         return "After the discount, the total comes to $#{@total}"
-      end
   end
   def items
     # returns an array containing all items that have been added
