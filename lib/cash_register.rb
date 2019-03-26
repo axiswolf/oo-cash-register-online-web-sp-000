@@ -11,7 +11,7 @@ class CashRegister
     # returns current total
     @total = total
   end
-  def self.add_item(title,price,quantity=0)
+  def add_item(title,price,quantity=1)
     # accepts a title and a price and increase the total
     # also accepts an optional quantity
     # doesn't forget about the previous total
