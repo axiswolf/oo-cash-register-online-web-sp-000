@@ -19,4 +19,10 @@ class CashRegister
   def apply_discount()
     # Cash register was initalized with an employee discount applies the discount to total price
   end
+  def items
+    # returns an array containing all items that have been added
+  end
+  def void_last_transaction
+    # subtracts the last transaction from the total
+  end
 end
