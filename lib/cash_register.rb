@@ -43,6 +43,6 @@ class CashRegister
   end
   def void_last_transaction
     # subtracts the last transaction from the total
-    self.total = @total - @total.pop
+    self.total = @total - items_info[:price].pop
   end
 end
