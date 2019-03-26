@@ -22,6 +22,7 @@ class CashRegister
     item_info[:quantity] = quantity
     @cart << item_info
     @total += price * quantity
+    @transactions << price
   end
   def apply_discount
     # Cash register was initalized with an employee discount applies the discount to total price
