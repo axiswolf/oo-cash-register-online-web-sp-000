@@ -27,7 +27,7 @@ class CashRegister
       if @discount == 0
         return "There is no discount to apply."
       else @total -= @total * @discount/100
-        return "After the discount, the total comes to #{@total}"
+        return "After the discount, the total comes to $#{@total}"
       end
   end
   def items
@@ -42,5 +42,6 @@ class CashRegister
   end
   def void_last_transaction
     # subtracts the last transaction from the total
+    
   end
 end
