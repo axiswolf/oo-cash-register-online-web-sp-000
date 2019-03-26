@@ -30,9 +30,13 @@ class CashRegister
         return "After the discount, the total comes to #{@total}"
       end
   end
-  def items(cart)
+  def items
     # returns an array containing all items that have been added
-    @cart = cart
+    items=[]
+    @cart.each do |things|
+      for quantity in 1..item_info[:name]
+        items << item_info
+      end
   end
   def void_last_transaction
     # subtracts the last transaction from the total
