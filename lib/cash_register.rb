@@ -1,7 +1,7 @@
 class CashRegister
   attr_accessor :new
   employee_discount = 20
-  def initialize(new=employee_discount)
+  def initialize(new="employee_discount")
     @total = 0
     # new sets an instance variable @total on initialization to zero
     # new optionally takes an employee discount on initalization
