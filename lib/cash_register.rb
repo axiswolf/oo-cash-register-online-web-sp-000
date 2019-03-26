@@ -30,7 +30,7 @@ class CashRegister
         return "After the discount, the total comes to #{@total}"
       end
   end
-  def items
+  def items(cart)
     # returns an array containing all items that have been added
     @cart = cart
   end
