@@ -16,6 +16,8 @@ class CashRegister
     # also accepts an optional quantity
     # doesn't forget about the previous total
     previous_total = total
+    title = [:title]
+    price = [:price]
   end
   def self.apply_discount()
     # Cash register was initalized with an employee discount applies the discount to total price
