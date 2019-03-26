@@ -16,13 +16,13 @@ class CashRegister
     # accepts a title and a price and increase the total
     # also accepts an optional quantity
     # doesn't forget about the previous total
+    @transactions << price
     item_info = {} # new hash
     item_info[:name] = title
     item_info[:price] = price
     item_info[:quantity] = quantity
     @cart << item_info
     @total += price * quantity
-    @transactions << price
   end
   def apply_discount
     # Cash register was initalized with an employee discount applies the discount to total price
