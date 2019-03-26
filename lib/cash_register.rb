@@ -25,7 +25,7 @@ class CashRegister
   def apply_discount
     # Cash register was initalized with an employee discount applies the discount to total price
       if @discount == 0
-        "No discount"
+        "No discount to apply"
       end
       @total -= @total * @discount/100
   end
