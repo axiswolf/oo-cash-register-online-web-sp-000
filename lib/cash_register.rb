@@ -6,7 +6,7 @@ class CashRegister
     # new sets an instance variable @total on initialization to zero
     # new optionally takes an employee discount on initalization
     @cart = []
-    @transaction = []
+    @transactions = []
   end
   def self.total(total)
     # returns current total
