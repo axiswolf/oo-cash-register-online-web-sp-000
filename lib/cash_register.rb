@@ -22,7 +22,7 @@ class CashRegister
     @cart << item_info
     @total += price * quantity
   end
-  def self.apply_discount
+  def apply_discount
     # Cash register was initalized with an employee discount applies the discount to total price
       if @discount == 0
         return "There is no discount to apply."
