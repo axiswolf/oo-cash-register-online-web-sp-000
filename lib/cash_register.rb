@@ -39,7 +39,7 @@ class CashRegister
       end
     end
     items
-    
+
   end
   def void_last_transaction
     # subtracts the last transaction from the total
