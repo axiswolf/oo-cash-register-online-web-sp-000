@@ -37,6 +37,7 @@ class CashRegister
       for quantity in 1..item_info[:quantity]
         items << item_info[:name]
       end
+      items
   end
   def void_last_transaction
     # subtracts the last transaction from the total
